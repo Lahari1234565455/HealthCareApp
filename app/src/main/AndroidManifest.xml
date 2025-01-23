@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SplashScreen"
+        tools:targetApi="31">
+        <activity
+            android:name=".Sendmessage29"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage28"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage27"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage26"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage25"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage24"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage23"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage22"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage21"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage20"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage19"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage18"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage17"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage16"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage15"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage14"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage13"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage12"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage11"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage10"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage9"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage8"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage7"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage6"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage5"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage4"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage3"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage2"
+            android:exported="false" />
+        <activity
+            android:name=".gyneconfirm3"
+            android:exported="false" />
+        <activity
+            android:name=".gyneconfirm2"
+            android:exported="false" />
+        <activity
+            android:name=".gyneconfirm1"
+            android:exported="false" />
+        <activity
+            android:name=".BG3"
+            android:exported="false" />
+        <activity
+            android:name=".BG2"
+            android:exported="false" />
+        <activity
+            android:name=".BG1"
+            android:exported="false" />
+        <activity
+            android:name=".Gynecologist3"
+            android:exported="false" />
+        <activity
+            android:name=".Gynecologist2"
+            android:exported="false" />
+        <activity
+            android:name=".Gynecologist1"
+            android:exported="false" />
+        <activity
+            android:name=".Ortho4confirm"
+            android:exported="false" />
+        <activity
+            android:name=".Ortho3confirm"
+            android:exported="false" />
+        <activity
+            android:name=".Ortho2confirm"
+            android:exported="false" />
+        <activity
+            android:name=".Ortho1confirm"
+            android:exported="false" />
+        <activity
+            android:name=".BU4"
+            android:exported="false" />
+        <activity
+            android:name=".BU3"
+            android:exported="false" />
+        <activity
+            android:name=".BU2"
+            android:exported="false" />
+        <activity
+            android:name=".BU1"
+            android:exported="false" />
+        <activity
+            android:name=".Urologist4"
+            android:exported="false" />
+        <activity
+            android:name=".Urologist3"
+            android:exported="false" />
+        <activity
+            android:name=".Urologist2"
+            android:exported="false" />
+        <activity
+            android:name=".Urologist1"
+            android:exported="false" />
+        <activity
+            android:name=".OC2"
+            android:exported="false" />
+        <activity
+            android:name=".OC1"
+            android:exported="false" />
+        <activity
+            android:name=".BO2"
+            android:exported="false" />
+        <activity
+            android:name=".BO1"
+            android:exported="false" />
+        <activity
+            android:name=".Orthopedic2"
+            android:exported="false" />
+        <activity
+            android:name=".Orthopedic1"
+            android:exported="false" />
+        <activity
+            android:name=".EC5"
+            android:exported="false" />
+        <activity
+            android:name=".EC4"
+            android:exported="false" />
+        <activity
+            android:name=".EC3"
+            android:exported="false" />
+        <activity
+            android:name=".EC2"
+            android:exported="false" />
+        <activity
+            android:name=".EC1"
+            android:exported="false" />
+        <activity
+            android:name=".BE5"
+            android:exported="false" />
+        <activity
+            android:name=".BE4"
+            android:exported="false" />
+        <activity
+            android:name=".BE3"
+            android:exported="false" />
+        <activity
+            android:name=".BE2"
+            android:exported="false" />
+        <activity
+            android:name=".BE1"
+            android:exported="false" />
+        <activity
+            android:name=".Eye5"
+            android:exported="false" />
+        <activity
+            android:name=".Eye4"
+            android:exported="false" />
+        <activity
+            android:name=".Eye3"
+            android:exported="false" />
+        <activity
+            android:name=".Eye2"
+            android:exported="false" />
+        <activity
+            android:name=".Eye1"
+            android:exported="false" />
+        <activity
+            android:name=".Eyecare"
+            android:exported="false" />
+        <activity
+            android:name=".ac5"
+            android:exported="false" />
+        <activity
+            android:name=".ac4"
+            android:exported="false" />
+        <activity
+            android:name=".ac3"
+            android:exported="false" />
+        <activity
+            android:name=".ac2"
+            android:exported="false" />
+        <activity
+            android:name=".ba4"
+            android:exported="false" />
+        <activity
+            android:name=".ba5"
+            android:exported="false" />
+        <activity
+            android:name=".ba3"
+            android:exported="false" />
+        <activity
+            android:name=".ba2"
+            android:exported="false" />
+        <activity
+            android:name=".AC1"
+            android:exported="false" />
+        <activity
+            android:name=".BA1"
+            android:exported="false" />
+        <activity
+            android:name=".Ayurveda5"
+            android:exported="false" />
+        <activity
+            android:name=".Ayurveda4"
+            android:exported="false" />
+        <activity
+            android:name=".Ayurveda3"
+            android:exported="false" />
+        <activity
+            android:name=".Ayurveda2"
+            android:exported="false" />
+        <activity
+            android:name=".Ayurveda1"
+            android:exported="false" />
+        <activity
+            android:name=".Ayurveda"
+            android:exported="false" />
+        <activity
+            android:name=".Sendmessage"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cde4"
+            android:exported="false" />
+        <activity
+            android:name=".cde3"
+            android:exported="false" />
+        <activity
+            android:name=".cde2"
+            android:exported="false" />
+        <activity
+            android:name=".cde1"
+            android:exported="false" />
+        <activity
+            android:name=".bde4"
+            android:exported="false" />
+        <activity
+            android:name=".bde3"
+            android:exported="false" />
+        <activity
+            android:name=".bde2"
+            android:exported="false" />
+        <activity
+            android:name=".bde1"
+            android:exported="false" />
+        <activity
+            android:name=".Dermatologist4"
+            android:exported="false" />
+        <activity
+            android:name=".Dermatologist3"
+            android:exported="false" />
+        <activity
+            android:name=".Dermatologist2"
+            android:exported="false" />
+        <activity
+            android:name=".Dermatologist1"
+            android:exported="false" />
+        <activity
+            android:name=".CC4"
+            android:exported="false" />
+        <activity
+            android:name=".BC4"
+            android:exported="false" />
+        <activity
+            android:name=".CC3"
+            android:exported="false" />
+        <activity
+            android:name=".BC3"
+            android:exported="false" />
+        <activity
+            android:name=".CC2"
+            android:exported="false" />
+        <activity
+            android:name=".BC2"
+            android:exported="false" />
+        <activity
+            android:name=".CC1"
+            android:exported="false" />
+        <activity
+            android:name=".BC1"
+            android:exported="false" />
+        <activity
+            android:name=".cardiologist4"
+            android:exported="false" />
+        <activity
+            android:name=".cardiologist3"
+            android:exported="false" />
+        <activity
+            android:name=".cardiologist2"
+            android:exported="false" />
+        <activity
+            android:name=".cardiologist1"
+            android:exported="false" />
+        <activity
+            android:name=".CD12"
+            android:exported="false" />
+        <activity
+            android:name=".BD12"
+            android:exported="false" />
+        <activity
+            android:name=".CD11"
+            android:exported="false" />
+        <activity
+            android:name=".BD11"
+            android:exported="false" />
+        <activity
+            android:name=".CD10"
+            android:exported="false" />
+        <activity
+            android:name=".BD10"
+            android:exported="false" />
+        <activity
+            android:name=".CD9"
+            android:exported="false" />
+        <activity
+            android:name=".BD9"
+            android:exported="false" />
+        <activity
+            android:name=".CD8"
+            android:exported="false" />
+        <activity
+            android:name=".BD8"
+            android:exported="false" />
+        <activity
+            android:name=".CD7"
+            android:exported="false" />
+        <activity
+            android:name=".BD7"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist12"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist11"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist10"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist9"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist8"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist7"
+            android:exported="false" />
+        <activity
+            android:name=".CD6"
+            android:exported="false" />
+        <activity
+            android:name=".BD6"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist6"
+            android:exported="false" />
+        <activity
+            android:name=".CD5"
+            android:exported="false" />
+        <activity
+            android:name=".BD5"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist5"
+            android:exported="false" />
+        <activity
+            android:name=".CD4"
+            android:exported="false" />
+        <activity
+            android:name=".BD4"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist4"
+            android:exported="false" />
+        <activity
+            android:name=".CD3"
+            android:exported="false" />
+        <activity
+            android:name=".BD3"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist3"
+            android:exported="false" />
+        <activity
+            android:name=".CD2"
+            android:exported="false" />
+        <activity
+            android:name=".BD2"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist2"
+            android:exported="false" />
+        <activity
+            android:name=".Confirmation"
+            android:exported="false" />
+        <activity
+            android:name=".BookingPage"
+            android:exported="false" />
+        <activity
+            android:name=".Dentist1"
+            android:exported="false" />
+        <activity
+            android:name=".GynecologistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UrologistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrthopedicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EyecareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AyurvedaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DermatologistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardiologistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DentistDoctorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpecializationActivity"
+            android:exported="false" /> <!-- Activities -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Otp"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneAuthenication"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

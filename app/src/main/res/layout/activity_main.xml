@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:id="@+id/relMain"
+    tools:context=".MainActivity">
+
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:lottie_rawRes="@raw/doctor_appointment"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctors in Nellore"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/txtDoctor"
+        android:fontFamily="cursive"
+        android:visibility="gone"
+        android:textColor="@color/pink"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Appoinment"
+            android:textSize="30dp"
+            android:visibility="gone"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/pink"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/txtBook"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Health, Our Priority – Book Doctor Appointments Easily!"
+        android:textSize="20dp"
+        android:textColor="@color/pink"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+
+        />
+</RelativeLayout>

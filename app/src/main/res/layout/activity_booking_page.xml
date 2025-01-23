@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".BookingPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Doctor's Name -->
+
+        <!-- Date Display -->
+        <TextView
+            android:id="@+id/date_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:gravity="center"
+            android:paddingTop="8dp"/>
+
+        <!-- Date Picker Button -->
+        <Button
+            android:id="@+id/date_picker_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Date Selector -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@color/background">
+
+                <!-- Add Buttons for Date Selector with separate CardViews -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="27\n4"
+                        android:textSize="14sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:backgroundTint="@color/white" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28\n5"
+                        android:textSize="14sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:backgroundTint="@color/white" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="29\n6"
+                        android:textSize="14sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:backgroundTint="@color/white" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30\n7"
+                        android:textSize="14sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:backgroundTint="@color/white" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1\n8"
+                        android:textSize="14sp"
+                        android:textColor="@color/primaryTextColor"
+                        android:backgroundTint="@color/white" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Morning Slots -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@color/background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Slots"
+                    android:textSize="16sp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:paddingTop="8dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Add Buttons for Morning Slots with separate CardViews -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:00 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:15 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:30 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:45 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:00 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:15 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:30 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:45 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11:00 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11:15 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11:30 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11:45 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:00 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/morning_slot_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:15 AM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Evening Slots -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@color/background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening Slots"
+                    android:textSize="16sp"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:paddingTop="8dp"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Add Buttons for Evening Slots with separate CardViews -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05:00 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05:15 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05:30 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05:45 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="06:00 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="06:15 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="06:30 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="06:45 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="07:00 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="07:15 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="07:30 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="07:45 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:00 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:15 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:30 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:45 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:00 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:15 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:30 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:45 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp">
+                        <Button
+                            android:id="@+id/evening_slot_21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:00 PM"
+                            android:textSize="14sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:backgroundTint="@color/white" />
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Confirm Button -->
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Confirm"
+                android:onClick="booknow"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Make a Payment Button -->
+            <Button
+                android:id="@+id/make_payment_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Make a Payment"
+                android:onClick="makePayment"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

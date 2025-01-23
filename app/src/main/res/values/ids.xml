@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="header_card" type="id" />
+    <item name="date_selector_card" type="id" />
+    <item name="evening_slots_card" type="id" />
+    <item name="morning_slots_card" type="id" />
+    <item name="phone_number_card" type="id" />
+    <item name="slot_display" type="id" />
+    <item name="phone_layout" type="id" />
+    <item name="location_layout" type="id" />
+    <item name="book_appointment_button" type="id" />
+</resources>
